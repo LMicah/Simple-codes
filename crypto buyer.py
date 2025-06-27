@@ -32,7 +32,7 @@ def getchoice():
 
 def getprice(x, y):
      try:
-          resposta = requests.get("") #<------- your api code here
+          resposta = requests.get("https://rest.coincap.io/v3/assets?apiKey=") #<------- your coincap api key also goes here
           dados = resposta.json()
      except requests.RequestException:
           sys.exit()
