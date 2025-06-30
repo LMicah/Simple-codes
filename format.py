@@ -32,7 +32,7 @@ def format_file(file):
                 new_line = splitted + fline
                 lista.append(new_line)
     except FileNotFoundError:
-        sys.exit("File was not")
+        sys.exit("File was not found")
     return lista
 
 def write(output, lista):
